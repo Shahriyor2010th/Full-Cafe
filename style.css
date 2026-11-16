@@ -695,11 +695,6 @@ h2 {
 .product__box > button:active {
   background: #ff6426aa;
 }
-.product__box {
-  animation: fadeIn 0.5s ease-in-out;
-  animation-timeline: view();
-  animation-range: entry 0% 40%;
-}
 .product__box{
    transition: 
         transform 0.3s ease,
