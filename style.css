@@ -642,6 +642,7 @@ h2 {
   gap: 20px;
 }
 .product__box {
+  overflow: hidden;
   min-width: 0;
   min-height: 416px;
   display: flex;
@@ -698,6 +699,23 @@ h2 {
   animation: fadeIn 0.5s ease-in-out;
   animation-timeline: view();
   animation-range: entry 0% 40%;
+}
+.product__box{
+   transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+.product__box:hover{
+  transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(80, 40, 15, 0.13);
+    border-color: #f0a15c;
+}
+.product__box img{
+  transition: transform 0.5s cubic-bezier(.2,.8,.2,1);
+}
+.product__box:hover img{
+   transform: scale(1.08);
 }
 /* Cart overlay: modal layout and the selected order list. */
 .cart__container {
@@ -1521,10 +1539,6 @@ h2 {
     gap: 3px;
   }
 }
-
-/* ============================================================
-   L'AURORA CART REDESIGN: warm artisan-cafe checkout experience
-   ============================================================ */
 .cart__container {
   padding: clamp(12px, 3vw, 34px);
   overflow-y: auto;
@@ -2029,6 +2043,16 @@ h2 {
   .cart-items-list .dish__count button {
     width: 27px;
     height: 27px;
+  }
+  .hero__thumbnail{
+    margin: 0;
+  }
+  .hero-copy{
+    width: 340px;
+  }
+  .hero__thumbnail img{
+    width: 340px;
+    height: 340px;
   }
 }
 /* Keep the cart hidden until the header bag is opened. */
