@@ -270,6 +270,9 @@ textarea {
   font-weight: 400;
   color: #fff;
 }
+.main-nav a:hover{
+  color: #ffffffce;
+}
 .header-actions {
   display: flex;
   align-items: center;
